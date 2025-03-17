@@ -1,12 +1,6 @@
 .ingredient-text {
-  background: linear-gradient(
-    to right,
-    rgb(74, 129, 187) 30%,
-    rgb(231, 15, 170) 70%
-  );
+  background: linear-gradient(to right, $light-blue 30%, $pink-color 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  font-weight: bold;
-  text-transform: capitalize;
 }
