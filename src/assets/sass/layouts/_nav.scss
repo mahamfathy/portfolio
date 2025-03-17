@@ -1,0 +1,47 @@
+section {
+  margin-top: 1.8rem;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    border: 1px solid $grey;
+    h3 {
+      text-transform: capitalize;
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: $dark-text-color;
+          font-weight: bold;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: rgb(74, 129, 187);
+          }
+        }
+      }
+      .social-media {
+        display: flex;
+        gap: 15px;
+        a {
+          color: $dark-text-color;
+          font-size: 20px;
+          transition: color 0.3s ease-in-out;
+          color: rgb(74, 129, 187);
+          &:hover {
+            color: rgb(231, 15, 170);
+          }
+        }
+      }
+    }
+  }
+}

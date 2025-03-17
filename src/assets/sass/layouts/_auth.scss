@@ -1,7 +1,6 @@
 .auth-container {
   height: 100%;
-  background-color: $auth-bg;
-  color: $auth-text-color;
+  color: black;
   .form-container {
     height: 100%;
     width: 100%;
@@ -9,7 +8,7 @@
     justify-content: space-between;
     flex-direction: column;
     &__title {
-      color: $auth-hover-color;
+      color: black;
       margin-bottom: 0.5rem;
       font-size: 1.8rem;
     }
@@ -18,9 +17,9 @@
       padding: 0 1.2rem;
       margin-bottom: 0.2rem;
       .auth-icon {
-        border: 2px solid $light-grey;
-        color: $auth-text-color;
-        background-color: $light-grey;
+        border: 2px solid grey;
+        color: black;
+        background-color: grey;
         cursor: pointer;
         padding: 2rem;
         border-radius: 0.8rem;
@@ -29,18 +28,18 @@
         position: relative;
         &:hover i,
         &.active i {
-          color: $auth-hover-color;
+          color: black;
         }
         &:hover,
         &.active {
-          border: 2px solid $auth-hover-color;
+          border: 2px solidblack;
         }
       }
     }
     &__link {
       margin: 0;
       a {
-        color: $auth-hover-color;
+        color: black;
         text-decoration: underline;
       }
     }

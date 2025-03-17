@@ -4,7 +4,7 @@
     font-weight: bold;
   }
   .role {
-    color: $auth-hover-color;
+    color: black;
   }
   .dropdown-toggle {
     width: 250px;
@@ -29,7 +29,7 @@
       margin-bottom: 7px;
       &:hover {
         padding-left: 18px;
-        background-color: $auth-hover-color;
+        background-color: black;
       }
       .icon {
         vertical-align: middle;

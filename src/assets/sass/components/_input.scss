@@ -15,18 +15,18 @@
   input {
     padding: 0.3rem;
     padding-left: 2rem;
-    background-color: $light-grey !important;
-    border: 2px solid $auth-text-color;
+    background-color: grey !important;
+    // border: 2px solid $auth-text-color;
     border-radius: 0.4rem;
-    color: $auth-text-color;
+    color: black;
     width: 100%;
     &:focus {
-      background-color: $light-grey !important;
+      background-color: grey !important;
     }
   }
   select {
-    background-color: $light-grey;
-    color: $auth-text-color;
+    background-color: grey;
+    color: black;
     option {
       padding: 10px;
     }

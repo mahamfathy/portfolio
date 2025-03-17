@@ -1,3 +1,12 @@
-.orange-color {
-  color: orange;
+.ingredient-text {
+  background: linear-gradient(
+    to right,
+    rgb(74, 129, 187) 30%,
+    rgb(231, 15, 170) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  display: inline-block;
+  font-weight: bold;
 }
