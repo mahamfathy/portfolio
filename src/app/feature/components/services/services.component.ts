@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+
 interface Service {
   icon: string;
   title: string;
   description: string;
 }
+
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -15,18 +17,19 @@ export class ServicesComponent {
       icon: 'code',
       title: 'Angular Development',
       description:
-        'Building modern, scalable, and high-performance web applications using Angular.',
+        'Developing modern, scalable, and high-performance web applications using Angular. Focusing on component-based architecture and state management for optimized solutions.',
     },
     {
       icon: 'devices',
       title: 'Responsive Web Design',
       description:
-        'Ensuring websites look great and function perfectly on all devices.',
+        'Creating websites that adapt seamlessly to all screen sizes, ensuring a consistent and engaging user experience across desktops, tablets, and mobile devices.',
     },
     {
       icon: 'palette',
       title: 'UI/UX Design',
-      description: 'Creating visually appealing and user-friendly interfaces.',
+      description:
+        'Designing intuitive and visually appealing interfaces with a focus on usability and accessibility, enhancing user interaction and engagement.',
     },
   ];
 }
