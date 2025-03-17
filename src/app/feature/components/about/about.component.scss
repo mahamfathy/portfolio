@@ -1,0 +1,53 @@
+@import "../../../../assets/sass/main.scss";
+h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+img {
+  margin-top: -2rem;
+}
+.text {
+  font-size: 1.5rem;
+  span {
+    text-transform: capitalize;
+    color: $light-blue;
+  }
+}
+.right-side {
+  background-image: url("../../../../assets/images/Jpg/bg-text.jpg");
+  background-size: cover;
+  border-radius: 40%;
+  -webkit-border-radius: 40%;
+  -moz-border-radius: 40%;
+  -ms-border-radius: 40%;
+  -o-border-radius: 40%;
+}
+button {
+  position: relative;
+  background: transparent;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
+  -webkit-mask: linear-gradient(white 0 0) content-box,
+    linear-gradient(white 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+button:hover {
+  background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
+  color: white;
+}

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './feature/components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './feature/components/footer/footer.component';
+import { AboutComponent } from './feature/components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
