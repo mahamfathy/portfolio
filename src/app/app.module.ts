@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './feature/components/footer/footer.component';
 import { AboutComponent } from './feature/components/about/about.component';
 import { ServicesComponent } from './feature/components/services/services.component';
+import { TechStackComponent } from './feature/components/tech-stack/tech-stack.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServicesComponent } from './feature/components/services/services.compon
     NavComponent,
     FooterComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    TechStackComponent
   ],
   imports: [
     BrowserModule,
