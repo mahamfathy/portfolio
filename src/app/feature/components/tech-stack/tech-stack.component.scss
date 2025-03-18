@@ -1,6 +1,8 @@
 @import "../../../../assets/sass/main.scss";
 .tech-container {
   width: 75%;
+  color: $dark-text-color;
+  font-size: x-large;
   .stack-icons {
     display: flex;
     flex-wrap: wrap;
