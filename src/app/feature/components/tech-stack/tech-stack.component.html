@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="tech-container text-center">
+      <h2 class="gradient-text">My Tech Stack</h2>
+      <div class="tech-stack">
+        <div class="stack-icons">
+          <span *ngFor="let tech of techStack">
+            <i [class]="tech.iconClass"></i>
+            <p>{{ tech.name }}</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
