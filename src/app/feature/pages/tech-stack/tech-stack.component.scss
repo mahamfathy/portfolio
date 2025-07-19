@@ -1,0 +1,70 @@
+@import "../../../../assets/sass/main.scss";
+.tech-container {
+  width: 75%;
+  color: $dark-text-color;
+  font-size: x-large;
+  .stack-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+
+      i {
+        font-size: 5rem;
+        transition: 0.3s ease-in-out;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $dark-text-color;
+      }
+
+      &:hover i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.devicon-html5-plain {
+  color: #e34f26;
+}
+.devicon-css3-plain {
+  color: #1572b6;
+}
+.devicon-sass-original {
+  color: #cc6699;
+}
+.devicon-javascript-plain {
+  color: #f7df1e;
+}
+.devicon-typescript-plain {
+  color: #3178c6;
+}
+.devicon-angular-plain {
+  color: #dd0031;
+}
+.devicon-figma-plain {
+  color: #f24e1e;
+}
+.devicon-npm-original-wordmark {
+  color: #cb3837;
+}
+.devicon-git-plain {
+  color: #f05032;
+}
+.devicon-github-original {
+  color: #000;
+}
+.devicon-bootstrap-plain {
+  color: #7952b3;
+}
+.devicon-vscode-plain {
+  color: #007acc;
+}
