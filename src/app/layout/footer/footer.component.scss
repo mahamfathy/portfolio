@@ -2,3 +2,19 @@ a {
   text-shadow: 0 0 10px rgba(98, 182, 255, 0.7),
     0 0 10px rgba(255, 105, 180, 0.7);
 }
+.footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #888;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
