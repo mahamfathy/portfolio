@@ -1,10 +1,13 @@
-<div class="container">
+<div class="container py-5">
   <div class="row">
-    <div class="portfolio-container d-flex flex-wrap justify-content-between">
-      <app-single-project
-        *ngFor="let project of projects"
-        [project]="project"
-      />
+    <div class="col-12 text-center mb-4">
+      <h2 class="gradient-text">My Projects</h2>
     </div>
+
+    <ng-container *ngFor="let project of projects">
+      <div class="col-10 col-sm-6 col-md-4 mb-4 m-0 m-auto">
+        <app-single-project [project]="project"></app-single-project>
+      </div>
+    </ng-container>
   </div>
 </div>
