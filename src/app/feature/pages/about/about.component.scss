@@ -19,3 +19,18 @@ img {
   background-size: cover;
   border-radius: 40%;
 }
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  a {
+    color: $dark-text-color;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    color: $light-blue;
+    &:hover,
+    &.active {
+      color: $pink-color;
+    }
+  }
+}

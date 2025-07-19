@@ -1,4 +1,4 @@
-button {
+.resume-btn {
   position: relative;
   background: transparent;
   padding: 8px 15px;
@@ -7,23 +7,21 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-radius: 5px;
-  background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
-  -webkit-mask: linear-gradient(white 0 0) content-box,
-    linear-gradient(white 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
-}
-
-button:hover,
-button:active {
-  background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
-  color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
+    -webkit-mask: linear-gradient(white 0 0) content-box,
+      linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  &:hover,
+  &:active {
+    background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
+    color: white;
+  }
 }

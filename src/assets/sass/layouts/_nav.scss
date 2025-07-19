@@ -19,17 +19,6 @@ nav {
     margin: 0;
     padding: 0;
     li {
-      // a {
-      //   text-decoration: none;
-      //   color: $dark-text-color;
-      //   font-weight: bold;
-      //   transition: color 0.3s ease-in-out;
-      //   cursor: pointer;
-      //   &:hover,
-      //   &.active {
-      //     color: $light-blue;
-      //   }
-      // }
       a {
         color: $dark-text-color;
         font-weight: bold;
@@ -42,20 +31,6 @@ nav {
 
         &:hover {
           color: $light-blue;
-        }
-      }
-    }
-    .social-media {
-      display: flex;
-      gap: 15px;
-      a {
-        color: $dark-text-color;
-        font-size: 20px;
-        transition: color 0.3s ease-in-out;
-        color: $light-blue;
-        &:hover,
-        &.active {
-          color: $pink-color;
         }
       }
     }
