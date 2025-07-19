@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="portfolio-container d-flex flex-wrap justify-content-between">
+      <app-single-project
+        *ngFor="let project of projects"
+        [project]="project"
+      />
+    </div>
+  </div>
+</div>
