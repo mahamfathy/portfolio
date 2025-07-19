@@ -19,14 +19,28 @@ nav {
     margin: 0;
     padding: 0;
     li {
+      // a {
+      //   text-decoration: none;
+      //   color: $dark-text-color;
+      //   font-weight: bold;
+      //   transition: color 0.3s ease-in-out;
+      //   cursor: pointer;
+      //   &:hover,
+      //   &.active {
+      //     color: $light-blue;
+      //   }
+      // }
       a {
-        text-decoration: none;
         color: $dark-text-color;
         font-weight: bold;
+        text-decoration: none;
         transition: color 0.3s ease-in-out;
-        cursor: pointer;
-        &:hover,
+
         &.active {
+          color: $pink-color;
+        }
+
+        &:hover {
           color: $light-blue;
         }
       }
