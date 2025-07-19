@@ -12,6 +12,7 @@ import { ServicesComponent } from './feature/pages/services/services.component';
 import { TechStackComponent } from './feature/pages/tech-stack/tech-stack.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavComponent } from './layout/nav/nav.component';
+import { ContactComponent } from './feature/pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavComponent } from './layout/nav/nav.component';
     TechStackComponent,
     ProjectsComponent,
     SingleProjectComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
