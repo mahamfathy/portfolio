@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './feature/components/nav/nav.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent } from './feature/components/footer/footer.component';
-import { AboutComponent } from './feature/components/about/about.component';
-import { ServicesComponent } from './feature/components/services/services.component';
-import { TechStackComponent } from './feature/components/tech-stack/tech-stack.component';
+import { AboutComponent } from './feature/pages/about/about.component';
+import { ProjectsComponent } from './feature/pages/projects/projects.component';
+import { SingleProjectComponent } from './feature/pages/projects/single-project/single-project.component';
+import { ServicesComponent } from './feature/pages/services/services.component';
+import { TechStackComponent } from './feature/pages/tech-stack/tech-stack.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NavComponent } from './layout/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { TechStackComponent } from './feature/components/tech-stack/tech-stack.c
     FooterComponent,
     AboutComponent,
     ServicesComponent,
-    TechStackComponent
+    TechStackComponent,
+    ProjectsComponent,
+    SingleProjectComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
