@@ -34,7 +34,8 @@
       font-weight: bold;
       text-decoration: none;
       color: white;
-
+      opacity: 0.9;
+      @include button-hover-effect;
       &.whatsapp-btn {
         background-color: #25d366;
       }
