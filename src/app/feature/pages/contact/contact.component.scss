@@ -9,6 +9,18 @@
   justify-content: center;
   background-color: #eadada;
   color: #6c6c6c;
+  .paragraph {
+    font-size: 2rem;
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
+    @include respond(phone) {
+      font-size: 1.1rem;
+    }
+  }
   .contact-buttons {
     display: flex;
     flex-wrap: wrap;
