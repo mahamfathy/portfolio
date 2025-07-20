@@ -1,7 +1,12 @@
 @import "../../../../assets/sass/main.scss";
 .about-container {
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: column-reverse;
+  }
+  .left-side {
+    @include respond(tab-port) {
+      width: 80%;
+    }
   }
 }
 h1 {
@@ -9,7 +14,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
   @include respond(tab-land) {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   @include respond(tab-port) {
@@ -34,15 +39,23 @@ img {
 
   span {
     text-transform: capitalize;
-    color: $light-blue;
+    color: $pink-color;
+    font-weight: 500;
+    font-style: italic;
+    font-size: large;
   }
 }
 .right-side {
   background-image: url("../../../../assets/images/Jpg/bg-text.jpg");
   background-size: cover;
   border-radius: 40%;
-  @include respond(phone) {
+
+  @include respond(tab-port) {
+    width: 75%;
     margin-bottom: 2rem;
+  }
+  @include respond(phone) {
+    width: 70%;
   }
 }
 
