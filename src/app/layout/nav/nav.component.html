@@ -2,7 +2,7 @@
   <h3 class="gradient-text">maha fathy</h3>
 
   <button
-    class="navbar-toggler pink-btn"
+    class="navbar-toggler nav-btn"
     type="button"
     data-bs-toggle="collapse"
     data-bs-target="#navbarNav"
@@ -15,6 +15,15 @@
 
   <div class="collapse navbar-collapse" id="navbarNav" #navbarCollapse>
     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <button
+          (click)="toggleTheme()"
+          (click)="closeNavbar()"
+          class="btn btn-sm ms-md-3 nav-btn"
+        >
+          {{ isDarkMode ? "🌞" : "🌚" }}
+        </button>
+      </li>
       <li class="nav-item">
         <a
           class="nav-link"
@@ -59,15 +68,6 @@
           (click)="closeNavbar()"
           >Contact</a
         >
-      </li>
-      <li class="nav-item">
-        <button
-          (click)="toggleTheme()"
-          (click)="closeNavbar()"
-          class="btn btn-sm ms-md-3 pink-btn"
-        >
-          {{ isDarkMode ? "🌞" : "🌛" }}
-        </button>
       </li>
     </ul>
   </div>
