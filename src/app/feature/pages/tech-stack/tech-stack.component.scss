@@ -83,3 +83,8 @@
 .devicon-docker-plain {
   color: #2496ed;
 }
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s, transform 0.3s;
+}

@@ -4,7 +4,12 @@
       <h2 class="gradient-text">My Tech Stack</h2>
       <div class="tech-stack">
         <p class="mb-5">The skills, tools, and technologies I use:</p>
-        <div class="stack-icons">
+        <div
+          #stackIcons
+          class="stack-icons"
+          [ngClass]="{ hidden: animationState !== 'visible' }"
+          [@fadeInAnimation]="animationState"
+        >
           <span *ngFor="let tech of techStack">
             <i [class]="tech.iconClass"></i>
             <p>{{ tech.name }}</p>
