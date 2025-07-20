@@ -25,6 +25,7 @@
     "devicon": "^2.16.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typeit": "^8.8.7",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
