@@ -5,7 +5,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 interface Service {
   icon: string;
@@ -30,7 +30,7 @@ interface Service {
     ]),
   ],
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
   cardStates: ('visible' | 'hidden')[] = [];
 
   services: Service[] = [
