@@ -5,19 +5,3 @@ nav {
   background-color: var(--bg-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-button {
-  background-color: $pink-color;
-  color: var(--text-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  opacity: 0.7;
-
-  &:hover {
-    opacity: 0.9;
-    background-color: $pink-color;
-  }
-}
