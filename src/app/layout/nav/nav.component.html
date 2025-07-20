@@ -61,7 +61,11 @@
         >
       </li>
       <li class="nav-item">
-        <button (click)="toggleTheme()" class="btn btn-sm ms-md-3">
+        <button
+          (click)="toggleTheme()"
+          (click)="closeNavbar()"
+          class="btn btn-sm ms-md-3"
+        >
           {{ isDarkMode ? "🌞" : "🌛" }}
         </button>
       </li>

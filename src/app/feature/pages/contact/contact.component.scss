@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #eadada;
-  color: #6c6c6c;
+  background-color: rgba(205, 166, 166, 0.4196078431);
+  color: var(--text-color);
   .paragraph {
     font-size: 2rem;
     @include respond(tab-land) {
@@ -59,7 +59,6 @@
 
   .extra-info {
     margin-top: 2rem;
-    color: #666;
 
     a {
       color: #4e79ff;
