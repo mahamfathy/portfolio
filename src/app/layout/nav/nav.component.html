@@ -1,26 +1,70 @@
-<nav>
+<nav class="navbar navbar-expand-md sticky-top">
   <h3 class="gradient-text">maha fathy</h3>
-  <ul>
-    <li>
-      <a href="#about" [class.active]="activeSection === 'about'">About</a>
-    </li>
-    <li>
-      <a href="#services" [class.active]="activeSection === 'services'"
-        >Services</a
-      >
-    </li>
-    <li>
-      <a href="#tech" [class.active]="activeSection === 'tech'">Tech Stack</a>
-    </li>
-    <li>
-      <a href="#projects" [class.active]="activeSection === 'projects'"
-        >Projects</a
-      >
-    </li>
-    <li>
-      <a href="#contact" [class.active]="activeSection === 'contact'"
-        >Contact</a
-      >
-    </li>
-  </ul>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav" #navbarCollapse>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#about"
+          [class.active]="activeSection === 'about'"
+          (click)="closeNavbar()"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#services"
+          [class.active]="activeSection === 'services'"
+          (click)="closeNavbar()"
+          >Services</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#tech"
+          [class.active]="activeSection === 'tech'"
+          (click)="closeNavbar()"
+          >Tech Stack</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#projects"
+          [class.active]="activeSection === 'projects'"
+          (click)="closeNavbar()"
+          >Projects</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#contact"
+          [class.active]="activeSection === 'contact'"
+          (click)="closeNavbar()"
+          >Contact</a
+        >
+      </li>
+      <li class="nav-item">
+        <button (click)="toggleTheme()" class="btn btn-sm ms-md-3">
+          {{ isDarkMode ? "🌞" : "🌛" }}
+        </button>
+      </li>
+    </ul>
+  </div>
 </nav>

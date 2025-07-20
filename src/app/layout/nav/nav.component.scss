@@ -1,22 +1,23 @@
 @import "../../../assets/sass/main.scss";
+
 nav {
-  position: sticky;
-  top: 0;
   z-index: 500;
   background-color: var(--bg-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 button {
   background-color: $pink-color;
   color: var(--text-color);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 0.6;
+  opacity: 0.7;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    background-color: $pink-color;
   }
 }
