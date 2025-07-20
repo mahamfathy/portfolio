@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
+import { Component, HostListener } from '@angular/core';
 
 interface Service {
   icon: string;
@@ -10,8 +17,22 @@ interface Service {
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss'],
+  animations: [
+    trigger('fadeInFromLeft', [
+      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      state('hidden', style({ opacity: 0, transform: 'translateX(-100px)' })),
+      transition('hidden => visible', animate('1000ms ease-out')),
+    ]),
+    trigger('fadeInFromRight', [
+      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      state('hidden', style({ opacity: 0, transform: 'translateX(100px)' })),
+      transition('hidden => visible', animate('1000ms ease-out')),
+    ]),
+  ],
 })
 export class ServicesComponent {
+  cardStates: ('visible' | 'hidden')[] = [];
+
   services: Service[] = [
     {
       icon: 'code',
@@ -32,4 +53,20 @@ export class ServicesComponent {
         'Designing intuitive and visually appealing interfaces with a focus on usability and accessibility, enhancing user interaction and engagement.',
     },
   ];
+  ngOnInit(): void {
+    this.cardStates = Array(this.services.length).fill('hidden');
+    this.onScroll();
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach((card, i) => {
+      const rect = card.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight - 100;
+      if (isVisible && this.cardStates[i] !== 'visible') {
+        this.cardStates[i] = 'visible';
+      }
+    });
+  }
 }
