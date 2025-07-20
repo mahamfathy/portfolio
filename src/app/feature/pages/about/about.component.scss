@@ -7,6 +7,15 @@
     @include respond(tab-port) {
       width: 80%;
     }
+    p {
+      font-size: x-large;
+      @include respond(tab-land) {
+        font-size: larger;
+      }
+      @include respond(tab-port) {
+        font-size: large;
+      }
+    }
   }
 }
 h1 {
@@ -14,7 +23,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
   @include respond(tab-land) {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   @include respond(tab-port) {
@@ -71,5 +80,25 @@ img {
     &.active {
       color: $pink-color;
     }
+  }
+}
+.typing {
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: xx-large;
+  color: $pink-color;
+  font-weight: 600;
+  animation: blink 0.7s infinite;
+  direction: ltr;
+  font-family: monospace;
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
   }
 }

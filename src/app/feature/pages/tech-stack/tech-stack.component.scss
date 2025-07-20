@@ -1,8 +1,11 @@
 @import "../../../../assets/sass/main.scss";
 .tech-container {
-  width: 75%;
+  width: 100%;
   color: var(--text-color);
   font-size: x-large;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
   .stack-icons {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +29,7 @@
           font-size: 4rem;
         }
         @include respond(phone) {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       }
 
@@ -87,4 +90,9 @@
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.3s, transform 0.3s;
+}
+.paragraph {
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
 }
