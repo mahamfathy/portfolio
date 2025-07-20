@@ -32,15 +32,24 @@
         font-size: 1.9rem;
         color: #62b6ff;
         margin: 0;
+        @include respond(phone) {
+          font-size: 1.5rem;
+        }
       }
       h3 {
         font-size: 1.5rem;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
       }
 
       p {
         font-size: 1rem;
         margin: 0;
-        color: $dark-text-color;
+        color: var(--text-color);
+        @include respond(phone) {
+          font-size: 0.9rem;
+        }
       }
     }
   }
