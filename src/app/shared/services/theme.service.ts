@@ -4,18 +4,33 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  private darkmode = false;
-  constructor() {}
+  private storageKey = 'isDarkMode';
+
+  constructor() {
+    const storedValue = localStorage.getItem(this.storageKey);
+    if (storedValue === 'true') {
+      this.applyDarkMode(true);
+    } else {
+      this.applyDarkMode(false);
+    }
+  }
+
   toggleTheme(): void {
-    this.darkmode = !this.darkmode;
+    const isDark = document.body.classList.contains('dark-theme');
+    this.applyDarkMode(!isDark);
+    localStorage.setItem(this.storageKey, (!isDark).toString());
+  }
+
+  private applyDarkMode(enable: boolean): void {
     const classList = document.body.classList;
-    if (this.darkmode) {
+    if (enable) {
       classList.add('dark-theme');
     } else {
       classList.remove('dark-theme');
     }
   }
+
   isDarkMode(): boolean {
-    return this.darkmode;
+    return document.body.classList.contains('dark-theme');
   }
 }

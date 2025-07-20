@@ -21,7 +21,7 @@ export class NavComponent implements AfterViewInit {
   constructor(private themeService: ThemeService) {}
 
   ngAfterViewInit(): void {
-    this.isDarkMode = document.body.classList.contains('dark');
+    this.isDarkMode = this.themeService.isDarkMode();
     this.loadParticles();
   }
 
