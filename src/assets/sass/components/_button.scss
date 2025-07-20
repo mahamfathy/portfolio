@@ -6,6 +6,7 @@
   border: 2px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  color: var(--text-color);
   transition: 0.3s;
   &::before {
     content: "";
@@ -22,6 +23,6 @@
   &:hover,
   &:active {
     background: linear-gradient(to right, #62b6ff 30%, #ff69b4 70%);
-    color: white;
+    color: var(--bg-color);
   }
 }

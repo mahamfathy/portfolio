@@ -1,5 +1,23 @@
 // COLORS //
 
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222222cf;
+  --primary-color: #7b61ff;
+  --card-bg: #ffffff;
+  --button-bg: #7b61ff;
+  --button-text: #ffffff;
+}
+
+.dark-theme {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --primary-color: #9d7dff;
+  --card-bg: #2c2c2c;
+  --button-bg: #9d7dff;
+  --button-text: #1e1e1e;
+}
+
 $black-color: #000000;
 $white-color: #ffffff;
 
