@@ -1,7 +1,7 @@
 @import "../../../../assets/sass/main.scss";
 .tech-container {
   width: 75%;
-  color: $dark-text-color;
+  color: var(--text-color);
   font-size: x-large;
   .stack-icons {
     display: flex;
@@ -33,7 +33,6 @@
       p {
         font-size: 1rem;
         font-weight: 500;
-        color: $dark-text-color;
       }
 
       &:hover i {
@@ -77,4 +76,10 @@
 }
 .devicon-vscode-plain {
   color: #007acc;
+}
+.devicon-jira-plain {
+  color: #0052cc;
+}
+.devicon-docker-plain {
+  color: #2496ed;
 }

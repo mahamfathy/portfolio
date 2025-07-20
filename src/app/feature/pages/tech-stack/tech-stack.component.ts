@@ -23,5 +23,7 @@ export class TechStackComponent {
     { name: 'Bootstrap', iconClass: 'devicon-bootstrap-plain' },
     { name: 'Angular Material', iconClass: 'devicon-angular-plain' },
     { name: 'VS Code', iconClass: 'devicon-vscode-plain' },
+    { name: 'Jira', iconClass: 'devicon-jira-plain' },
+    { name: 'Docker', iconClass: 'devicon-docker-plain' },
   ];
 }
